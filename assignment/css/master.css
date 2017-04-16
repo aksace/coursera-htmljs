@@ -1,0 +1,40 @@
+fieldset{
+  border: 10px solid yellow;
+  background: lightyellow;
+  margin-bottom: : 10px;
+  text-align: left;
+  width: 720px;
+}
+
+label {
+  width: 180px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: text-top;
+}
+
+input[type="radio"] + label,
+        input[type="checkbox"] + label {
+            width: auto;
+}
+
+.label-min-range {
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            color: white;
+            background: red;
+}
+
+.label-max-range {
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+            color: white;
+            background: purple;
+}
+
+input:hover,
+label:hover {
+  font-size: 25px
+}

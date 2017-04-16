@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<head>
+  <title>Dating website</title>
+  <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+  <h1>Please Enter Your Details for Our Dating Website</h1>
+  <form class="" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Your Face</legend>
+        <label for="filename">Your Image : </label>
+        <input type="file" id="filename" name="filename" required>
+        <br>
+        <label for="imgpreview">Image Preview : </label>
+        <img id="imgpreview" name="imgpreview">
+    </fieldset><br>
+    <fieldset>
+      <legend>Your General details</legend>
+        <label for="username">Name : </label>
+        <input type="text" name="username" placeholder="Your Full Name" required><br>
+        <label for="usergender">Gender : </label>
+        <input type="radio" name="usergender" value="Male" checked required>Male
+        <input type="radio" name="usergender" value="Female" required>Female<br>
+        <label for="userage">Age : </label>
+        <input type="number" name="userage" value="18"><br>
+        <label for="userbirth">Date of Birth : </label>
+        <input type="date" name="userbirth" value=""><br>
+        <label for="usercolor">Favorite Color : </label>
+        <input type="color" name="usercolor" value=""><br>
+        <label for="usercountry">Which Country? </label>
+        <select class="" name="">
+          <option value="us">U.S.A</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+          <option value="korea">Korea</option>
+        </select>
+    </fieldset><br>
+    <fieldset>
+      <legend>Your Indicators</legend>
+        <label for="userheight">Height : </label>
+        <span class="label-min-range">Short</span>
+        <input type="range" name="userheight" value="50" min="0" max="100">
+        <span class="label-max-range">Tall</span><br>
+        <label for="usersalary">Salary : </label>
+        <span class="label-min-range">Poor</span>
+        <input type="range" name="" value="50" min="0" max="100">
+        <span class="label-max-range">Rich</span><br>
+    </fieldset><br>
+    <fieldset>
+      <legend>Your Contact Information</legend>
+        <label for="useremail">Email : </label>
+        <input type="email" name="useremail" required=""><br>
+        <label for="usermobile">Mobile : </label>
+        <input type="number" name="usermobile" size="10" required><br>
+        <label for="useraddress">Address : </label>
+        <textarea name="useraddress" rows="4" cols="60"></textarea><br>
+    </fieldset><br>
+    <input type="submit">
+</form>
+</body>
